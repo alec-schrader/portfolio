@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { TaskBar, List, Modal, Frame } from '@react95/core';
+import { TaskBar, List, Modal, Frame, Button } from '@react95/core';
 import {
     User,
     Globe,
@@ -24,8 +24,7 @@ function onClick(msg) {
 
 
 function Desktop() {
-    const [showAbout, toggleShowAbout] = useState(false);
-
+    const [showAbout, toggleShowAbout] = useState(true);
 
     return (
     <>
@@ -41,7 +40,7 @@ function Desktop() {
             text={"test icon 2"}
         ></DesktopIcon>
 
-        {showAbout && <About closeModal={toggleShowAbout}></About>}
+        {showAbout && <About toggleShowModal={toggleShowAbout}></About>}
 
         <TaskBar
             list={

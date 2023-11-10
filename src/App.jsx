@@ -1,11 +1,12 @@
 import './App.css'
-import { ThemeProvider } from '@react95/core';
+import { ThemeProvider, GlobalStyle } from '@react95/core';
 
 
 import Desktop from './components/Desktop'
 const App = () => (
-  <ThemeProvider>
-    <Desktop/>
+  <ThemeProvider theme='storm'>
+    <GlobalStyle></GlobalStyle>
+    <Desktop />
   </ThemeProvider>
 );
 

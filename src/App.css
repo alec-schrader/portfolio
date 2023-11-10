@@ -8,4 +8,10 @@ body {
   display: flex;
   flex-direction: column;
   padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.background {
+  background-image: url("/assets/wallpaper.png");
+  background-size: cover;
 }

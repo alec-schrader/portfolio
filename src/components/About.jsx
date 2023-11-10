@@ -6,23 +6,31 @@ import {
 } from "@react95/icons";
 
 
-const About = ({closeModal}) => (
-    <Modal 
-        width="300" height="200" 
-        icon={<Mmsys113 variant="32x32_4" />} 
-        title="About" 
-        defaultPosition={{
-            x: 0,
-            y: 20
-        }} 
-        closeModal={() => closeModal(false)} >
-        <Frame bg="white" boxShadow="in" h="100%" w="100%">
-            <p>
-                Test about modal
-            </p>
-        </Frame>
-    </Modal>
-);
+
+
+function About({ toggleShowModal }) {
+    const handleOpenModal = () => toggleShowModal(true);
+    const handleCloseModal = () => toggleShowModal(false);
+
+    return (
+        <Modal
+            width="300" height="200"
+            icon={<Mmsys113 variant="32x32_4" />}
+            title="About"
+            defaultPosition={{
+                x: 100,
+                y: 25
+            }}
+            closeModal={handleCloseModal}
+        >
+            <Frame bg="white" boxShadow="in" h="100%" w="100%">
+                <p>
+                    Test about modal
+                </p>
+            </Frame>
+        </Modal>
+    );
+};
 
 export default About
 
