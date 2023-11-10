@@ -1,0 +1,11 @@
+body {
+  background-color: aqua;
+}
+
+.desktopIcon {
+  width: 90px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
