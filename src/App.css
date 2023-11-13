@@ -15,3 +15,19 @@ body {
   background-image: url("/assets/wallpaper.png");
   background-size: cover;
 }
+
+.textFrame {
+  padding-left: 10px;
+  padding-right: 10px;
+  overflow-y: auto;
+  max-height: 500px;
+}
+
+.aboutImage {
+  height: 250px;
+  width: 250px
+}
+
+.alignRight{
+  text-align: right;
+}

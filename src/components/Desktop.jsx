@@ -17,14 +17,11 @@ import Projects from './Projects'
 import DesktopIcon from './DesktopIcon';
 
 import About from './About'
-
-function onClick(msg) {
-    alert(msg)
-}
-
+import Resume from './Resume'
 
 function Desktop() {
     const [showAbout, toggleShowAbout] = useState(true);
+    const [showResume, toggleShowResume] = useState(false);
 
     return (
     <>
@@ -35,12 +32,13 @@ function Desktop() {
         ></DesktopIcon>
 
         <DesktopIcon
-            icon={<Explorer103 variant="32x32_4" />}
-            onClick={onClick}
-            text={"test icon 2"}
+            icon={<Comdlg32528 variant="32x32_4" />}
+            onClick={toggleShowResume}
+            text={"Resume"}
         ></DesktopIcon>
 
         {showAbout && <About toggleShowModal={toggleShowAbout}></About>}
+        {showResume && <Resume toggleShowModal={toggleShowResume}></Resume>}
 
         <TaskBar
             list={
@@ -55,6 +53,7 @@ function Desktop() {
                     <List.Item
                         as="a"
                         icon={<Comdlg32528 variant="32x32_4" />}
+                        onClick={toggleShowResume}
                     >
                         Resume
                     </List.Item>
