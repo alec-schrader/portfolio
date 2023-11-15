@@ -26,6 +26,10 @@ function Paint({ toggleShowModal }) {
         canvas.addEventListener('mousedown', canvasMouseDown);
         canvas.addEventListener('mousemove', canvasMouseMove);
         canvas.addEventListener('mouseup', canvasMouseUp);
+
+        canvas.addEventListener('touchdown', canvasMouseDown);
+        canvas.addEventListener('touchmove', canvasMouseMove);
+        canvas.addEventListener('touchup', canvasMouseUp);
       }, []);
 
     function canvasMouseDown (event) {
@@ -64,7 +68,7 @@ function Paint({ toggleShowModal }) {
     function setColor(color) {
         context.strokeStyle = color;
     }
-    
+
     const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'white', 'black']
     const paintColors = colors.map((color) => (<PaintColor color={color} changeColor={setColor} />));
 
