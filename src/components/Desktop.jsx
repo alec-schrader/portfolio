@@ -7,12 +7,14 @@ import {
     Mail,
     Comdlg32528,
     FolderSettings,
-    Explorer103
+    Explorer103,
+    Brush
 } from "@react95/icons";
 import '@react95/icons/icons.css';
 
 import Links from './Links'
 import Projects from './Projects'
+import Paint from './Paint'
 
 import DesktopIcon from './DesktopIcon';
 
@@ -22,6 +24,7 @@ import Resume from './Resume'
 function Desktop() {
     const [showAbout, toggleShowAbout] = useState(true);
     const [showResume, toggleShowResume] = useState(false);
+    const [showPaint, toggleShowPaint] = useState(false);
 
     return (
     <>
@@ -39,6 +42,7 @@ function Desktop() {
 
         {showAbout && <About toggleShowModal={toggleShowAbout}></About>}
         {showResume && <Resume toggleShowModal={toggleShowResume}></Resume>}
+        {showPaint && <Paint toggleShowModal={toggleShowPaint}></Paint>}
 
         <TaskBar
             list={
@@ -57,6 +61,15 @@ function Desktop() {
                     >
                         Resume
                     </List.Item>
+                    <List.Divider />
+                    <List.Item
+                        as="a"
+                        icon={<Brush variant="32x32_4"/>}
+                        onClick={toggleShowPaint}
+                    >
+                        Paint
+                    </List.Item>
+
                     <List.Divider />
                     <List.Item icon={<FolderSettings variant="32x32_4" />}>
                         Projects
