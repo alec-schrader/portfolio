@@ -13,23 +13,22 @@ function Paint({ toggleShowModal }) {
     const handleCloseModal = () => toggleShowModal(false);
 
     const canvasRef = useRef(null);
-    let context, boundings;
+    let canvas, context, boundings;
 
     var isDrawing = false;
     let mouseX = 0, mouseY=0;
 
     useEffect(() => {
-        const canvas = canvasRef.current;
+        canvas = canvasRef.current;
         context = canvas.getContext('2d');
-        boundings = canvas.getBoundingClientRect();
 
         canvas.addEventListener('mousedown', canvasMouseDown);
         canvas.addEventListener('mousemove', canvasMouseMove);
         canvas.addEventListener('mouseup', canvasMouseUp);
 
-        canvas.addEventListener('touchdown', canvasMouseDown);
+        canvas.addEventListener('touchstart', canvasMouseDown);
         canvas.addEventListener('touchmove', canvasMouseMove);
-        canvas.addEventListener('touchup', canvasMouseUp);
+        canvas.addEventListener('touchend', canvasMouseUp);
       }, []);
 
     function canvasMouseDown (event) {
@@ -57,6 +56,8 @@ function Paint({ toggleShowModal }) {
 
     // Handle Mouse Coordinates
     function setMouseCoordinates(event) {
+        //boundings need to be reset here in case the canvas moves on the screen.
+        boundings = canvas.getBoundingClientRect();
         mouseX = event.clientX - boundings.left;
         mouseY = event.clientY - boundings.top;
     }
@@ -70,7 +71,7 @@ function Paint({ toggleShowModal }) {
     }
 
     const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'white', 'black']
-    const paintColors = colors.map((color) => (<PaintColor color={color} changeColor={setColor} />));
+    const paintColors = colors.map((color) => (<PaintColor color={color} changeColor={setColor} key={color} />));
 
     return (
         <Modal
