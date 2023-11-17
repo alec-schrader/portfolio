@@ -1,6 +1,3 @@
-import {
-    Explorer103
-} from "@react95/icons";
 import '@react95/icons/icons.css';
 
 const DesktopIcon = ({onClick, icon, text}) => (

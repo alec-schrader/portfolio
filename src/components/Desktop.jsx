@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { TaskBar, List, Modal, Frame, Button } from '@react95/core';
+import { TaskBar, List } from '@react95/core';
 import {
     User,
     Globe,
@@ -8,23 +8,25 @@ import {
     Comdlg32528,
     FolderSettings,
     Explorer103,
-    Brush
+    Brush,
 } from "@react95/icons";
 import '@react95/icons/icons.css';
 
 import Links from './Links'
 import Projects from './Projects'
-import Paint from './Paint'
 
 import DesktopIcon from './DesktopIcon';
 
 import About from './About'
 import Resume from './Resume'
+import Paint from './Paint'
+import Boom from './Boom'
 
 function Desktop() {
-    const [showAbout, toggleShowAbout] = useState(true);
+    const [showAbout, toggleShowAbout] = useState(false);
     const [showResume, toggleShowResume] = useState(false);
     const [showPaint, toggleShowPaint] = useState(false);
+    const [showBoom, toggleShowBoom] = useState(false);
 
     return (
     <>
@@ -43,6 +45,7 @@ function Desktop() {
         {showAbout && <About toggleShowModal={toggleShowAbout}></About>}
         {showResume && <Resume toggleShowModal={toggleShowResume}></Resume>}
         {showPaint && <Paint toggleShowModal={toggleShowPaint}></Paint>}
+        {showBoom && <Boom toggleShowModal={toggleShowPaint}></Boom>}
 
         <TaskBar
             list={
@@ -69,22 +72,11 @@ function Desktop() {
                     >
                         Paint
                     </List.Item>
-
                     <List.Divider />
                     <List.Item icon={<FolderSettings variant="32x32_4" />}>
                         Projects
                         <List>
-                            {Projects.map(({ name, url }) => (
-                                <List.Item
-                                    as="a"
-                                    href={url}
-                                    key={name}
-                                    rel="noopener noreferrer"
-                                    target="_blank"
-                                >
-                                    {name}
-                                </List.Item>
-                            ))}
+                            {Projects}
                         </List>
                     </List.Item>
                     <List.Item icon={<Globe variant="32x32_4" />}>

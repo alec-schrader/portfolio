@@ -9,7 +9,6 @@ import {
 
 
 function About({ toggleShowModal }) {
-    const handleOpenModal = () => toggleShowModal(true);
     const handleCloseModal = () => toggleShowModal(false);
 
     return (

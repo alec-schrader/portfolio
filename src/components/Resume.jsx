@@ -5,11 +5,7 @@ import {
     Mmsys113
 } from "@react95/icons";
 
-
-
-
 function Resume({ toggleShowModal }) {
-    const handleOpenModal = () => toggleShowModal(true);
     const handleCloseModal = () => toggleShowModal(false);
 
     const downloadResume = (format) => {
