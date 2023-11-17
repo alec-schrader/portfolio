@@ -20,13 +20,11 @@ import DesktopIcon from './DesktopIcon';
 import About from './About'
 import Resume from './Resume'
 import Paint from './Paint'
-import Boom from './Boom'
 
 function Desktop() {
-    const [showAbout, toggleShowAbout] = useState(false);
+    const [showAbout, toggleShowAbout] = useState(true);
     const [showResume, toggleShowResume] = useState(false);
     const [showPaint, toggleShowPaint] = useState(false);
-    const [showBoom, toggleShowBoom] = useState(false);
 
     return (
     <>
@@ -45,7 +43,6 @@ function Desktop() {
         {showAbout && <About toggleShowModal={toggleShowAbout}></About>}
         {showResume && <Resume toggleShowModal={toggleShowResume}></Resume>}
         {showPaint && <Paint toggleShowModal={toggleShowPaint}></Paint>}
-        {showBoom && <Boom toggleShowModal={toggleShowPaint}></Boom>}
 
         <TaskBar
             list={
