@@ -19,26 +19,26 @@ const Projects = [
   >
     Workout Competitions
   </List.Item>,
-  <List.Item
-    as="a"
-    href={""}
-    key={2}
-    rel="noopener noreferrer"
-    target="_blank"
-    icon={<Drvspace7 variant="32x32_4"/>}
-  >
-    Pizza Pals
-  </List.Item>,
-  <List.Item
-    as="a"
-    href={""}
-    key={2}
-    rel="noopener noreferrer"
-    target="_blank"
-    icon={<Progman24 variant="32x32_4"/>}
-  >
-     Art Museum
-  </List.Item>,
+  // <List.Item
+  //   as="a"
+  //   href={""}
+  //   key={2}
+  //   rel="noopener noreferrer"
+  //   target="_blank"
+  //   icon={<Drvspace7 variant="32x32_4"/>}
+  // >
+  //   Pizza Pals
+  // </List.Item>,
+  // <List.Item
+  //   as="a"
+  //   href={""}
+  //   key={2}
+  //   rel="noopener noreferrer"
+  //   target="_blank"
+  //   icon={<Progman24 variant="32x32_4"/>}
+  // >
+  //    Art Museum
+  // </List.Item>,
   <List.Item
     as="a"
     href={"https://boom.alecschrader.dev"}

@@ -79,16 +79,16 @@ function Resume({ toggleShowModal }) {
                             support requests.
                         </li>
                         <li>
-                            Created a sophisticated algorithm in ASP.Net Core utilizing patient data and NCCN guidelines to 
+                            Created a sophisticated algorithm in C# ASP.Net Core utilizing patient data and NCCN guidelines to 
                             enable precise risk assessment and informed decision-making in over 6,000 patients.
                         </li>
                         <li>
-                            Led the creation of a RESTful ASP.Net Core API and React.js user interface, establishing a profitable 
+                            Led the creation of a RESTful C# ASP.Net Core API and React.js user interface, establishing a profitable 
                             new revenue stream for genetic laboratory test order processing and results management, resulting in 
                             a 35% reduction in order processing time and a 45% increase in revenue.
                         </li>
                         <li>
-                            Enhanced the precision of patient breast cancer risk assessment outcomes by implementing an C++ API layer 
+                            Enhanced the precision of patient breast cancer risk assessment outcomes by implementing a C++ API layer 
                             that improved the Gail and Tyrer-Cuzick risk models, increasing accuracy by 30% over the previous solution.
                         </li>
                         <li>
@@ -105,15 +105,15 @@ function Resume({ toggleShowModal }) {
                     <h4>Full-Stack Software Developer (Remote)</h4>
                     <ul>
                         <li>
-                            Collaborated on a comprehensive survey and appointment tracking system utilizing ASP.Net MVC for state 
+                            Collaborated on a comprehensive survey and appointment tracking system utilizing C# and VB ASP.Net MVC for state 
                             insurance recipients, contributing to the company's #1 ranking for reporting within the state.
                         </li>
                         <li>
-                            Engineered an integrated claims data submission portal with ASP.Net MVC, jQuery, and Bootstrap, 
+                            Engineered an integrated claims data submission portal with VB ASP.Net MVC, jQuery, and Bootstrap, 
                             resulting in a significant reduction in lead time for medical review on insurance claims.
                         </li>
                         <li>
-                            Designed and developed a customized CRM software solution in ASP.Net MVC for a medical imaging 
+                            Designed and developed a customized CRM software solution in C# ASP.Net MVC for a medical imaging 
                             dealership, improving operational efficiency through streamlined warranty tracking and installation 
                             date management.
                         </li>
@@ -136,7 +136,7 @@ function Resume({ toggleShowModal }) {
                     <hr />
 
                     <p>
-                        HTML, CSS, JavaScript, Python, C#, C++, React, ASP.Net Core, jQuery, LESS, Bootstrap, Material UI, Django, 
+                        HTML, CSS, JavaScript, Python, C#, C++, Visual Basic (VB), React, ASP.Net Core, jQuery, LESS, Bootstrap, Material UI, Django, 
                         Django Rest Framework, Postgres, Microsoft SQL Server (MSSQL), Firebase, Amazon Web Services (AWS), Git, Docker, 
                         Terraform, Playwright, Agile
                     </p>

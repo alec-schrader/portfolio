@@ -35,11 +35,19 @@ function About({ toggleShowModal }) {
                     I designed this website to recreate the nostolgia of my first experiences on a computer - the computer lab in elementary school!
                 </p>
                 <p>
+                    Other interests of mine include playing guitar, reading, cooking, and camping.
+                </p>
+                <p>
                     This is my portfolio site! Feel free to click around and explore my projects!
                 </p>
                 <p>
-                    For the best experience view this site on a desktop browser. 
+                    For the best experience view this website on a desktop browser. 
+                    <br/>
                     Developed using <a href='https://github.com/React95/React95'>React95.</a>
+                    <br/>
+                    Wallpaper created using Dall-e 2.
+                    <br/>
+                   View the souce code for this website on <a href="https://github.com/alec-schrader/portfolio">Github!</a>
                 </p>
             </Frame>
         </Modal>
