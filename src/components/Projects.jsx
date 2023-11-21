@@ -41,13 +41,13 @@ const Projects = [
   // </List.Item>,
   <List.Item
     as="a"
-    href={"https://boom.alecschrader.dev"}
+    href={"https://games.alecschrader.dev"}
     key={2}
     rel="noopener noreferrer"
     target="_blank"
     icon={<Joy102 variant="32x32_4"/>}
   >
-    Boom
+    Games
   </List.Item>,
 ];
 
