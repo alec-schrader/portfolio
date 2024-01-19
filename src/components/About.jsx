@@ -24,7 +24,7 @@ function About({ toggleShowModal }) {
         >
             <Frame bg="white" boxShadow="in" h="100%" w="100%" className='textFrame'>
                 <h2>About</h2>
-                <img className='aboutImage' src='/assets/pixelated.png'></img>
+                <img className='aboutImage' src='/assets/image.jpg'></img>
                 <p>
                     Hello and welcome to my website!
                 </p>
