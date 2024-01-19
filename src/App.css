@@ -28,6 +28,19 @@ body {
   width: 250px
 }
 
+.projectSplashImage{
+  height: 250px;
+  width: 250px
+}
+
+.projectSplashDescr{
+  font-size: 12px;
+}
+
+.projectSplashDescr>p{
+  margin-top: 0;
+}
+
 .alignRight{
   text-align: right;
 }
@@ -41,4 +54,12 @@ body {
 
 .paintColorContainer {
   display: flex;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-container > div {
+  padding-right: 10px;
 }

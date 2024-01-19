@@ -21,10 +21,14 @@ import About from './About'
 import Resume from './Resume'
 import Paint from './Paint'
 
+import ProjectSplash from './ProjectSplash';
+
 function Desktop() {
     const [showAbout, toggleShowAbout] = useState(true);
     const [showResume, toggleShowResume] = useState(false);
     const [showPaint, toggleShowPaint] = useState(false);
+    const [showProject, toggleShowProject] = useState(false);
+    const [activeProject, setActiveProject] = useState(null);
 
     return (
     <>
@@ -43,6 +47,7 @@ function Desktop() {
         {showAbout && <About toggleShowModal={toggleShowAbout}></About>}
         {showResume && <Resume toggleShowModal={toggleShowResume}></Resume>}
         {showPaint && <Paint toggleShowModal={toggleShowPaint}></Paint>}
+        {showProject && <ProjectSplash toggleShowModal={toggleShowProject} project={activeProject}></ProjectSplash>}
 
         <TaskBar
             list={
@@ -72,9 +77,7 @@ function Desktop() {
                     <List.Divider />
                     <List.Item icon={<FolderSettings variant="32x32_4" />}>
                         Projects
-                        <List>
-                            {Projects}
-                        </List>
+                        <Projects setActiveProject={setActiveProject} toggleShowModal={toggleShowProject}></Projects>
                     </List.Item>
                     <List.Item icon={<Globe variant="32x32_4" />}>
                         Links
