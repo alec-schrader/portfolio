@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import '@react95/icons/icons.css';
 import { Modal, Frame, List } from '@react95/core';
 import Markdown from 'react-markdown'
@@ -6,13 +7,27 @@ import {
     Mmsys113
 } from "@react95/icons";
 
-const resp = await fetch('/public/assets/alec_schrader_resume.md')
-const resumeMD = await resp.text();
 
 function Resume({ toggleShowModal }) {
     const handleCloseModal = () => toggleShowModal(false);
+    const [resumeMD, setResumeMD] = useState("");
 
-    
+    useEffect(() => {
+        let ignore = false;
+
+        async function getResumeMD() {
+          const response = await fetch('/public/assets/alec_schrader_resume.md')
+          if (!ignore) {
+            setResumeMD(await response.text());
+          }
+        }
+      
+        getResumeMD();
+      
+        return () => {
+          ignore = true;
+        };
+    });
 
     const downloadResume = (format) => {
         var a = document.createElement("a");
