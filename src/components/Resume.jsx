@@ -16,7 +16,7 @@ function Resume({ toggleShowModal }) {
         let ignore = false;
 
         async function getResumeMD() {
-          const response = await fetch('/public/assets/alec_schrader_resume.md')
+          const response = await fetch('/assets/alec_schrader_resume.md')
           if (!ignore) {
             setResumeMD(await response.text());
           }
