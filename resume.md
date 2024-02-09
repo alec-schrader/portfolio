@@ -1,5 +1,5 @@
 # Alec Schrader
----
+
 [alecschrader@gmail.com](mailto:alecschrader@gmail.com) | (810) 588-1382 | Grand Rapids, MI 
 
 [www.linkedin.com/in/alec-schrader-dev](http://www.linkedin.com/in/alec-schrader-dev) |  [www.github.com/alec-schrader](http://www.github.com/alec-schrader) | [www.alecschrader.dev](https://www.alecschrader.dev) 
@@ -8,7 +8,7 @@
 Dedicated Software Engineer with 7 years of expertise in designing and implementing innovative web applications. Proven track record of collaborating with cross-functional teams and clients to deliver tailored solutions that streamline processes and enhance business outcomes. Recognized for driving projects to successful completion and exceeding client expectations.
 
 ## Work Experience
-### INHERET, Inc., Sep 2020 – Present
+### INHERET, Inc., Sep 2020 - Present
 #### Full Stack Software Engineer - Remote
 - Revamped and optimized a patient-facing React.js interface, resulting in a 50% decrease in customer support requests.
 - Created a sophisticated algorithm in C# ASP.Net Core utilizing patient data and NCCN guidelines to enable precise risk assessment and informed decision-making in over 6,000 patients.
@@ -18,7 +18,7 @@ Dedicated Software Engineer with 7 years of expertise in designing and implement
 - Overhauled and optimized MSSQL database tables, views, and stored procedures, resulting in at times 60% faster queries.
 - Implemented automated unit and integration testing using NUnit, Jest, and Selenium, reducing quality assurance (QA) efforts by 30%.
 
-### Paquette Software, Mar 2016 – Sep 2020
+### Paquette Software, Mar 2016 - Sep 2020
 #### Full Stack Software Engineer - Remote
 - Collaborated on a comprehensive survey and appointment tracking system utilizing C# and VB ASP.Net MVC for state insurance recipients, contributing to the company’s #1 ranking for reporting within the state.
 - Engineered an integrated claims data submission portal with VB ASP.Net MVC, jQuery, and Bootstrap, resulting in a significant reduction in lead time for medical review on insurance claims.

@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import '@react95/icons/icons.css';
 import { Modal, Frame, List } from '@react95/core';
-import Markdown from 'react-markdown'
 
 import {
     Mmsys113
@@ -10,19 +9,19 @@ import {
 
 function Resume({ toggleShowModal }) {
     const handleCloseModal = () => toggleShowModal(false);
-    const [resumeMD, setResumeMD] = useState("");
+    const [resumeHTML, setResumeHTML] = useState("");
 
     useEffect(() => {
         let ignore = false;
 
-        async function getResumeMD() {
-          const response = await fetch('/assets/alec_schrader_resume.md')
+        async function getResumeHTML() {
+          const response = await fetch('/assets/alec_schrader_resume.html')
           if (!ignore) {
-            setResumeMD(await response.text());
+            setResumeHTML(await response.text());
           }
         }
       
-        getResumeMD();
+        getResumeHTML();
       
         return () => {
           ignore = true;
@@ -68,10 +67,7 @@ function Resume({ toggleShowModal }) {
               }]}
         >
             <Frame bg="white" boxShadow="in" h="100%" w="100%" className='textFrame'>
-                <div>
-                    <Markdown>{resumeMD}</Markdown>
-                </div>
-
+                <div dangerouslySetInnerHTML={{__html: resumeHTML}} />
             </Frame>
         </Modal>
     );
