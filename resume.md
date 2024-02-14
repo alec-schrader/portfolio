@@ -5,7 +5,7 @@
 [www.linkedin.com/in/alec-schrader-dev](http://www.linkedin.com/in/alec-schrader-dev) |  [www.github.com/alec-schrader](http://www.github.com/alec-schrader) | [www.alecschrader.dev](https://www.alecschrader.dev) 
 
 ## Summary
-Dedicated Software Engineer with 7 years of expertise in designing and implementing innovative web applications. Proven track record of collaborating with cross-functional teams and clients to deliver tailored solutions that streamline processes and enhance business outcomes. Recognized for driving projects to successful completion and exceeding client expectations.
+Experienced Software Engineer with 7 years of expertise in designing, implementing, and deploying innovative web applications. Proven track record of collaborating with cross-functional teams and clients to deliver tailored solutions.
 
 ## Work Experience
 ### INHERET, Inc., Sep 2020 - Present
@@ -26,10 +26,7 @@ Dedicated Software Engineer with 7 years of expertise in designing and implement
 - Improved system load times by 30%, allowing improved user experience and efficiency by utilizing existing APIs and complex cloud deployments via AWS.
 
 ## Education
-**Kalamazoo Valley Community College, Aug 2023**
-
-_AA, English_ - Kalamazoo, MI
-3.9/4.0 GPA
+Kalamazoo Valley Community College, Aug 2023 - _AA, English_ - Kalamazoo, MI 3.9/4.0 GPA
 
 ## Skills
-HTML, CSS, JavaScript, Python, C#, C++, Visual Basic (VB), React, ASP.Net Core, jQuery, LESS, Bootstrap, Material UI, Django, Django Rest Framework, Postgres, Microsoft SQL Server (MSSQL), Firebase, Amazon Web Services (AWS), Git, Docker, Terraform, Playwright, NUnit, Jest
+HTML, CSS, JavaScript, Python, C#, React, ASP.Net Core, jQuery, LESS, Bootstrap, Material UI, Django, Microsoft SQL Server (MSSQL), Amazon Web Services (AWS), Git, Docker, Terraform, Playwright, NUnit, Jest, Github, CI/CD, Agile
