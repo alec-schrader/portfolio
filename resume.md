@@ -10,13 +10,13 @@ Dedicated Software Engineer with 7 years of expertise in designing and implement
 ## Work Experience
 ### INHERET, Inc., Sep 2020 - Present
 #### Full Stack Software Engineer - Remote
-- Revamped and optimized a patient-facing React.js interface, resulting in a 50% decrease in customer support requests.
-- Created a sophisticated algorithm in C# ASP.Net Core utilizing patient data and NCCN guidelines to enable precise risk assessment and informed decision-making in over 6,000 patients.
-- Led the creation of a RESTful C# ASP.Net Core API and React.js user interface, establishing a profitable new revenue stream for genetic laboratory test order processing and results management, resulting in a 35% reduction in order processing time and a 45% increase in revenue.
-- Enhanced the precision of patient breast cancer risk assessment outcomes by implementing a C++ API layer that improved the Gail and Tyrer-Cuzick risk models, increasing accuracy by 30% over the previous solution.
-- Migrated company cloud infrastructure to Amazon Web Services using Terraform, increasing maintainability and decreasing cost by 40%.
-- Overhauled and optimized MSSQL database tables, views, and stored procedures, resulting in at times 60% faster queries.
-- Implemented automated unit and integration testing using NUnit, Jest, and Selenium, reducing quality assurance (QA) efforts by 30%.
+- Revamped and optimized legacy user interface using React.js, resulting in a 50% decrease in customer support requests.
+- Created a sophisticated C# ASP.Net Core application with a Microsoft SQL Server database utilizing patient data and NCCN cancer guidelines to enable precise risk assessment and informed decision-making in over 6,000 patients.
+- Led the creation of a RESTful C# ASP.Net Core API and React.js user interface that integrates with a genetics laboratory for placing genetic test orders resulting in a 35% reduction in order processing time and a 45% increase in revenue.
+- Migrated company cloud infrastructure to Amazon Web Services (EC2, ECS, S3, RDS, Cloudwatch) using Terraform, increasing maintainability and decreasing cost by 40%.
+- Overhauled and optimized MSSQL database tables, views, and stored procedures resulting in, at times, 60% faster queries.
+- Created and maintained CI/CD pipelines using Github Actions to automatically perform tests and deploy applications to multiple environments reducing deployment efforts by 90%.
+- Implemented automated unit and integration testing using NUnit, Jest, and Selenium, reducing QA efforts by 30%.
 
 ### Paquette Software, Mar 2016 - Sep 2020
 #### Full Stack Software Engineer - Remote
